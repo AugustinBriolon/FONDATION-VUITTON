@@ -1,0 +1,187 @@
+/* on positionne le logo */
+.LogoFLV
+{
+	position: absolute;
+	right: 20px;
+	padding-top: 1%;
+	max-width: 10%;
+	height: auto;
+}
+
+/* intégration d'u background et ajout de ses attributs */
+body
+{
+	background: url(../img/BATFLV5.jpeg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	opacity: 0.7;
+	max-width: 100%;
+	height: auto;
+	/*-webkit-font-smoothing: antialiased;*/
+}
+
+/* ajout de lignes lorsque la souris passe sur les textes du menu burger */
+.menu__item
+{
+	display: inline-block;
+}
+
+.menu__item::after
+{
+	content: "";
+	display: block;
+	height: 3px;
+	width: 0%;
+	margin-bottom: 0px;
+	background-color: #000;
+	transition: width 0.4s;
+}
+
+.menu__item:hover::after
+{
+	width: 100%;
+}
+
+/* modification des textes du menu burger */
+a
+{
+	font-size: 20px;
+	color: black;
+	text-align: left;
+	display: inline;
+}
+
+/* modification du texte "welcome (...) foundation" */
+h1
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 75px;
+	color: black;
+	text-align: center;
+	padding-top: 300px;
+}
+
+/* appliquation de paramètres typographique et d'emplacement */
+*
+{
+	font-family: 'Montserrat', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+/* on va chercher la typographie souhaitée */
+@font-face
+{
+	font-family: 'Montserrat';
+	src: url(Montserrat-ExtraLight.ttf);
+}
+
+.icone-menu, .icone-fermer
+{
+	cursor: pointer;
+	width: 30px;
+	/* on position l'icone en haut à gauche */
+	left: 30px;
+	position: absolute;
+	top: 30px;
+}
+
+.menu
+{
+	background-color: white;
+	color: black;
+	margin: 0;
+	padding-top: 80px;
+	/* on positionne le menu à gauche sur toute la hauteur */
+	bottom: 0;
+	position: absolute;
+	top: 0;
+	/* on cache le menu */
+	opacity: 0;
+	transform: translateX(-100%);
+	/* transition */
+	transition: all .8s;
+}
+
+.visible
+{
+	/* on affiche le menu */
+	opacity: 1;
+	transform: translateX(0%);
+}
+
+li a
+{
+	text-decoration: none;
+	color: black;
+}
+
+li
+{
+	list-style-type: none;
+	padding: 5px 80px 5px 40px;
+}
+
+/* création du responsive de la page */
+@media all and (max-width: 480px)
+{
+	body
+	{
+	float: none}
+}
+
+
+@media all and (max-width: 1024px)
+{
+    .icone-menu, .icone-fermer
+{
+	cursor: pointer;
+	width: 80px;
+	/* on position l'icone en haut à gauche */
+	left: 30px;
+	position: absolute;
+	top: 30px;
+}
+.menu
+{
+	background-color: white;
+	color: black;
+	margin: 0;
+	padding-top: 80px;
+    z-index: 1;
+	/* on positionne le menu à gauche sur toute la hauteur */
+	bottom: 0;
+	position: absolute;
+	top: 0;
+	/* on cache le menu */
+	opacity: 0;
+	transform: translateX(-100%);
+	/* transition */
+	transition: all .8s;
+}
+.visible
+{
+	/* on affiche le menu */
+	opacity: 1;
+	transform: translateX(0%);
+}
+a
+{
+	font-size: 60px;
+	color: black;
+	text-align: left;
+	display: inline;
+}
+li
+{
+	list-style-type: none;
+	padding: 10px 20px 25px 20px;
+}
+
+h1
+{
+	font-size: 60px;
+}
+
+}
