@@ -21,7 +21,7 @@
 			<li><a href="../pages/contact.php" class="menu__item">Contact</a></li>
       </ul>
       <!-- ajout d'un titre -->
-      <h1 id="h1">Ga</h1>
+      <h1 id="h1">Gallery</h1>
 
         <div id="galerieImages">
             <img class="images" src="../img/Interieur2.png" />
