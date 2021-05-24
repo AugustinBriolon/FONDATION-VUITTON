@@ -3,10 +3,8 @@
     <head>
 		<meta charset="utf-8">
 		<title>Fondation Louis Vuitton</title>
-		<link rel="stylesheet" href="../style/galerie.css">
+		<link rel="stylesheet" href="../style/index.css">
     </head>
-    <header>-
-    </header>
     <body>
         <!-- icône menu -->
         <img src="../img/burger.svg" class="icone-menu" alt="Icone Menu"/>
@@ -21,7 +19,7 @@
 			<li><a href="../pages/contact.php" class="menu__item">Contact</a></li>
       </ul>
       <!-- ajout d'un titre -->
-      <h1 id="h1">Gallery</h1>
+      <h1 id="texteGallery">Gallery</h1>
 
         <div id="galerieImages">
             <img class="images" src="../img/Interieur2.png" />

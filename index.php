@@ -3,10 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Fondation Louis Vuitton</title>
-		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="./style/index.css">
 		<link rel="icon" type="image/x-icon" href="img/LogoFVL.png"/><link rel="shortcut icon" type="image/x-icon" href="img/LogoFVL.png" />
 	</head>
 	<header>
+		<img src="img/LogoFVL.png" class="LogoMiniFLV" alt="Image Logo FLV">
 		<!-- icône menu -->
 		<img src="img/burger.svg" class="icone-menu" alt="Icone Menu"/>
 		<!-- menu -->
@@ -21,7 +22,6 @@
 		</ul>
 	</header>
 	<body class="bodyIndex">
-		<img src="img/LogoFVL.png" class="LogoFLV" alt="Image Logo FLV">
 		<h1 class="BFLV"></h1>
 		<?php
 		include ('../pages/footer.php');

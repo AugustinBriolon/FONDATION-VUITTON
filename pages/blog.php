@@ -4,34 +4,33 @@
 <head>
     <meta charset="utf-8">
     <title>Fondation Louis Vuitton</title>
-    <link rel="stylesheet" href="./Style/blog.css">
+    <link rel="stylesheet" href="../style/index.css">
     
 </head>
 
 <header>    
-  <img src="./Images/Logo Grand FLV.png" class="LogoFLV" alt="Image Logo FLV">
+  <img src="../img/Logo Grand FLV.png" class="LogoFLV" alt="Image Logo FLV">
+
+    <!-- icône menu -->
+    <img src="../img/burger.svg" class="icone-menu" alt="Icone Menu"/>
+
+<!-- menu -->
+<ul class="menu">
+<!-- icône fermer -->
+<img src="../img/croix.svg" class="icone-fermer" alt="Icone Croix"/>
+<li><a href="../index.php" class="menu__item">Home</a></li>
+<li><a href="../pages/histoire.php" class="menu__item">History</a></li>
+<li><a href="../pages/galerie.php" class="menu__item">Gallery</a></li>
+<li><a href="../pages/Blog.php" class="menu__item">Animation</a></li>
+<li><a href="../pages/Contact.php" class="menu__item">Contact</a></li>
+</ul>
 </header>
 
 <body>
-
-    <!-- icône menu -->
-  <img src="./images/burger.svg" class="icone-menu" alt="Icone Menu"/>
-
-  <!-- menu -->
-  <ul class="menu">
-  <!-- icône fermer -->
-  <img src="./images/croix.svg" class="icone-fermer" alt="Icone Croix"/>
-  <li><a href="../index.php" class="menu__item">Home</a></li>
-  <li><a href="../Histoire/Histoire.php" class="menu__item">History</a></li>
-  <li><a href="../Galerie/galerieimage.php" class="menu__item">Gallery</a></li>
-  <li><a href="../Blog/Blog.php" class="menu__item">Animation</a></li>
-  <li><a href="../Contact/Contact.php" class="menu__item">Contact</a></li>
-</ul>
-
     <h1 id="h1">Animation</h1>  
     <h5 id="h5">Tap with your cursor !</h5>      
   <!--Ajout de Jquery -->
-  <script src="./Js/blog.js"></script>
+  <script src="../script/blog.js"></script>
 
 </body>
 

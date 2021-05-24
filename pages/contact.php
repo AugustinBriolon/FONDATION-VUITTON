@@ -13,7 +13,7 @@
 	<p id="h5">
 		Fill out the form to create an account.
 	</p>
-	<body>
+	<body id="bodyContact">
 		<!-- icône menu -->
 		<img src="../img/burger.svg" class="icone-menu" alt="Icone Menu"/>
 		<!-- menu -->
