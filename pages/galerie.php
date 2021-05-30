@@ -38,6 +38,10 @@
 
 <?php
 
+function censure($txt) {
+  return str_replace(array_map('trim', file('censure.txt')), '[Censuré]', $txt);
+}
+
 $pdo = new PDO('mysql:host=localhost;dbname=dialogue', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 
 if(isset($_GET["id"])){$id = $_GET["id"] ; $pdo->exec("DELETE FROM commentaires WHERE id =" . $id . "");};                    
@@ -51,9 +55,12 @@ if($_POST){
     $r = $pdo->query('SELECT * FROM commentaires  ORDER BY id DESC');
 
     while($commentaires = $r->fetch(PDO::FETCH_ASSOC)) {
+    echo censure('<span class="pseudoCom">' . $commentaires['pseudo'] . '</span> ' . ':' . $commentaires['message'] . " - " . '<span class="dateCom">' . $commentaires['date_heure'] </span>)
     echo "<div class='message'>"."<div class='pseudo'>". $commentaires['pseudo']."</div>" . " : ". "<div class='commentaire'>". $commentaires['message']."</div>"."
     <div class='date'>".$commentaires['date']."</div>" . "<a class='delete' href='galerie.php?id=" . $commentaires['id'] . "'> Delete </a>"."</div>";
   }
+
+
 
 ?>
 

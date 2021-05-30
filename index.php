@@ -22,7 +22,7 @@
 		</ul>
 	</header>
 	<body class="bodyIndex">
-		<h1 class="BFLV"></h1>
+        <h1 class="BFLV"></h1>
 		<?php
 		include ('../pages/footer.php');
 		?>

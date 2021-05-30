@@ -3,17 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Fondation Louis Vuitton</title>
-		<link rel="stylesheet" href="../style/contact.css">
+		<link rel="stylesheet" href="../style/index.css">
 	</head>
 	<header>
 		<img src="../img/Logo Grand FLV.png" class="LogoFLV" alt="Image Logo FLV">
 	</header>
-	<!-- Titre et indication -->
-	<h1 id="h1">Contact</h1>
-	<p id="h5">
-		Fill out the form to create an account.
-	</p>
 	<body id="bodyContact">
+		<!-- Titre et indication -->
+		<h1 id="titreContact">Contact</h1>
+		<p id="sousTitre">
+			Fill out the form to create an account.
+		</p>
 		<!-- icône menu -->
 		<img src="../img/burger.svg" class="icone-menu" alt="Icone Menu"/>
 		<!-- menu -->

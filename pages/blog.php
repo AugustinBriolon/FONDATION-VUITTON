@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
-    
 <head>
     <meta charset="utf-8">
     <title>Fondation Louis Vuitton</title>
     <link rel="stylesheet" href="../style/index.css">
-    
 </head>
 
 <header>    

@@ -18,9 +18,10 @@
   height: auto;
 }
 
-  .BFLV {
-    font-size: 60px;
-  }
+.BFLV {
+  font-size: 60px;
+  position: center;
+}
 
 /* -----History----- */
 
@@ -262,14 +263,14 @@ footer iframe {
 }
 
 /* placement "contact" */
-#h1 {
+#titreContact {
   margin-left: 48%;
   margin-right: 48%;
   margin-top: 1%;
 }
 
 /* modification du texte "fill(...)account" */
-#h5 {
+#sousTitre {
   margin-left: 40%;
   margin-top: 70px;
   font-size: 25px;
