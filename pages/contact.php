@@ -25,6 +25,7 @@
 			<li><a href="../pages/galerie.php" class="menu__item">Gallery</a></li>
 			<li><a href="../pages/blog.php" class="menu__item">Animation</a></li>
 			<li><a href="../pages/contact.php" class="menu__item">Contact</a></li>
+			<li><a href="../pages/seConnecter.php" class="menu__item">Se Connecter</a></li>
 		</ul>
 		<!-- formulaire et message de validation -->
 		<div class="formulaire">

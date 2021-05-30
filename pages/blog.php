@@ -16,11 +16,12 @@
 <ul class="menu">
 <!-- icône fermer -->
 <img src="../img/croix.svg" class="icone-fermer" alt="Icone Croix"/>
-<li><a href="../index.php" class="menu__item">Home</a></li>
-<li><a href="../pages/histoire.php" class="menu__item">History</a></li>
-<li><a href="../pages/galerie.php" class="menu__item">Gallery</a></li>
-<li><a href="../pages/Blog.php" class="menu__item">Animation</a></li>
-<li><a href="../pages/Contact.php" class="menu__item">Contact</a></li>
+    <li><a href="../index.php" class="menu__item">Home</a></li>
+    <li><a href="../pages/histoire.php" class="menu__item">History</a></li>
+    <li><a href="../pages/galerie.php" class="menu__item">Gallery</a></li>
+    <li><a href="../pages/Blog.php" class="menu__item">Animation</a></li>
+    <li><a href="../pages/Contact.php" class="menu__item">Contact</a></li>
+    <li><a href="../pages/seConnecter.php" class="menu__item">Se Connecter</a></li>
 </ul>
 </header>
 

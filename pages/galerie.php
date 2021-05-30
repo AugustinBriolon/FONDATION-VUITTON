@@ -17,6 +17,7 @@
 			<li><a href="../pages/galerie.php" class="menu__item">Gallery</a></li>
 			<li><a href="../pages/blog.php" class="menu__item">Animation</a></li>
 			<li><a href="../pages/contact.php" class="menu__item">Contact</a></li>
+      <li><a href="../pages/seConnecter.php" class="menu__item">Se Connecter</a></li>
       </ul>
       <!-- ajout d'un titre -->
       <h1 id="texteGallery">Gallery</h1>
@@ -24,12 +25,13 @@
         <div id="galerieImages">
             <img class="images" src="../img/Interieur2.png" />
             <img class="images" src="../img/BatFLV6.jpg" />
-            <img class="images" src="../img/FranckGhery.jpg" />
-            <img class="images" src="../img/Interieur.jpg" />
-            <img class="images" src="../img/Nuit.jpg" />
-            <img class="images" src="../img/Vu du haut.jpg" />
-            <img class="images" src="../img/Voile.jpg" />
-            <img class="images" src="../img/Restaurant.jpg" />
+            <img class="images" src="../img/FranckGhery.png" />
+            <img class="images" src="../img/Interieur.png" />
+            <img class="images" src="../img/Nuit.png" />
+            <img class="images" src="../img/Vu du haut.png" />
+            <img class="images" src="../img/Voile.png" />
+            <img class="images" src="../img/Restaurant.png" />
+            <img class="images" src="../img/MaquetteGalerie.png" />
         </div>
     </body>
     <script src="../script/galerie.js"></script>
@@ -38,9 +40,9 @@
 
 <?php
 
-function censure($txt) {
-  return str_replace(array_map('trim', file('censure.txt')), '[Censuré]', $txt);
-}
+//function censure($txt) {
+//  return str_replace(array_map('trim', file('censure.txt')), '[Censuré]', $txt);
+//}
 
 $pdo = new PDO('mysql:host=localhost;dbname=dialogue', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 
@@ -55,7 +57,7 @@ if($_POST){
     $r = $pdo->query('SELECT * FROM commentaires  ORDER BY id DESC');
 
     while($commentaires = $r->fetch(PDO::FETCH_ASSOC)) {
-    echo censure('<span class="pseudoCom">' . $commentaires['pseudo'] . '</span> ' . ':' . $commentaires['message'] . " - " . '<span class="dateCom">' . $commentaires['date_heure'] </span>)
+    //echo censure('<span class="pseudoCom">' . $commentaires['pseudo'] . '</span> ' . ':' . $commentaires['message'] . " - " . '<span class="dateCom">' . $commentaires['date_heure'] </span>)
     echo "<div class='message'>"."<div class='pseudo'>". $commentaires['pseudo']."</div>" . " : ". "<div class='commentaire'>". $commentaires['message']."</div>"."
     <div class='date'>".$commentaires['date']."</div>" . "<a class='delete' href='galerie.php?id=" . $commentaires['id'] . "'> Delete </a>"."</div>";
   }
