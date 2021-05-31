@@ -41,7 +41,9 @@
 			<p class="zone-message4"></p>
             <label>Your text</label>
 			<textarea placeholder="Your text here" class="texte"></textarea>
-			<button class="bouton-validation">Send</button>
+			<div class="specialBoutton">
+				<button id="bouton_validation">Send</button>
+			</div>
 		</div>
 		<ul class="medias">
 			<ol class="bulle">

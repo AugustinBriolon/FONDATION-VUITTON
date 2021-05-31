@@ -23,6 +23,11 @@
 	</header>
 
     <body>
+        <video poster="../img/imageFLVvideo.png id="videoFVL" playsinline autoplay muted loop>
+            <source src="../img/flvVideo.mp4" type="video/mp4">
+        </video>
+
+
         <div class="login-form">
 
             <?php 
@@ -34,21 +39,21 @@
                             case 'password':
             ?>
         <div>
-            <strong>Erreur</strong> mot de passe incorrect
+            <strong class="erreurConnexion">Erreur, mot de passe incorrect</strong> 
         </div>
         <?php
             break;
             case 'email':
         ?>
             <div>
-                <strong>Erreur</strong> email incorrect
+                <strong class="erreurConnexion">Erreur, email incorrect</strong>
             </div>
         <?php
             break;
             case 'already':
         ?>
             <div>
-                <strong>Erreur</strong> compte non existant
+                <strong class="erreurConnexion">Erreur, compte non existant</strong>
             </div>
         <?php
             break;
