@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -20,13 +24,13 @@
 			<li><a href="pages/blog.php" class="menu__item">Animation</a></li>
 			<li><a href="pages/contact.php" class="menu__item">Contact</a></li>
 			<li><a href="pages/seConnecter.php" class="menu__item">Se Connecter</a></li>
-	
 		</ul>
 	</header>
 	<body class="bodyIndex">
         <h1 class="BFLV"></h1>
 		<?php
-		include ('../pages/footer.php');
+			echo $_SESSION['user'];
+			include ('../pages/footer.php');
 		?>
 		<!--ajout de JS ici -->
 		<script src="script/typed.min.js"></script>
