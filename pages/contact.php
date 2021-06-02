@@ -5,8 +5,8 @@
 		<title>Fondation Louis Vuitton</title>
 		<link rel="stylesheet" href="../style/index.css">
 	</head>
-	<header>
-		<img src="../img/Logo Grand FLV.png" class="LogoFLV" alt="Image Logo FLV">
+	<header class="mainHeader">
+		<img src="../img/Logo Grand FLV.png" class="LogoFLVContact" alt="Image Logo FLV">
 	</header>
 	<body id="bodyContact">
 		<!-- Titre et indication -->

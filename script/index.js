@@ -5,7 +5,9 @@ var burger = document.querySelector('.icone-menu');
 
 // fonction pour ouvrir / fermer le menu
 function afficherMenu() {
+  
   menu.classList.toggle('visible');
+
 }
 
 // événements sur les icônes (click)
@@ -19,17 +21,3 @@ var typed = new Typed('.BFLV', {
 });
 
 
-
-
-class book {
-  constructor(title, pages){
-    this.title = title;
-    this.pages = pages;
-  }
-}
-
-
-let monLivre = new book("mon livre", 250);
-let monLivre2 = new book("mon Deuxieme Livre", 100);
-
-console.log(monLivre);

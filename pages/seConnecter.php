@@ -64,10 +64,10 @@
             <form action="login.php" method="post">
                 <h2 id="connexion">Connexion</h2>       
         <div class="form-group">
-            <input type="email" name="email" class="emailConnexion" placeholder="Email" required="required" autocomplete="on">
+            <input type="email" name="email" class="emailConnexion" placeholder="Email" required autocomplete="on">
         </div>
         <div class="form-group">
-            <input type="password" name="password" class="passwordConnexion" placeholder="Mot de passe" required="required" autocomplete="on">
+            <input type="password" name="password" class="passwordConnexion" placeholder="Mot de passe" required autocomplete="on">
         </div>
         <div class="form-group">
             <button type="submit" class="btnConnexion">Connexion</button>

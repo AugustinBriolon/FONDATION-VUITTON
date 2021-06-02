@@ -48,7 +48,7 @@
 //  return str_replace(array_map('trim', file('censure.txt')), '[Censuré]', $txt);
 //}
 
-$pdo = new PDO('mysql:host=localhost;dbname=dialogue', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+$pdo = new PDO('mysql:host=localhost;dbname=dialogue', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 
 if(isset($_GET["id"])){$id = $_GET["id"] ; $pdo->exec("DELETE FROM commentaires WHERE id =" . $id . "");};                    
 

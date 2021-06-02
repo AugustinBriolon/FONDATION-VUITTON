@@ -18,6 +18,7 @@
 		<ul class="menu">
 			<!-- icône fermer -->
 			<img src="img/croix.svg" class="icone-fermer" alt="Icone Croix"/>
+			<li><a href="index.php" class="menu__item"><?php echo $_SESSION["user"];?></a></li>
 			<li><a href="index.php" class="menu__item">Home</a></li>
 			<li><a href="pages/histoire.php" class="menu__item">History</a></li>
 			<li><a href="pages/galerie.php" class="menu__item">Gallery</a></li>
@@ -26,11 +27,10 @@
 			<li><a href="pages/seConnecter.php" class="menu__item">Se Connecter</a></li>
 		</ul>
 	</header>
-	<body class="bodyIndex">
+	<body id="bodyIndex">
         <h1 class="BFLV"></h1>
 		<?php
-			echo $_SESSION['user'];
-			include ('../pages/footer.php');
+			include ('pages/footer.php');
 		?>
 		<!--ajout de JS ici -->
 		<script src="script/typed.min.js"></script>
