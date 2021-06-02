@@ -13,7 +13,7 @@ try {
         $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
         // On regarde si l'utilisateur est inscrit dans la table utilisateurs
-        $check = $bdd->prepare('SELECT pseudo, email, password FROM utilisateurs WHERE email = ?');
+        $check = $bdd->prepare('SELECT pseudo, email, password, role FROM utilisateurs WHERE email = ?');
         $check->execute(array($email));
         $data = $check->fetch();
         $row = $check->rowCount();
@@ -26,6 +26,7 @@ try {
                 if (md5($password) === $data['password']) {
                     // On créer la session et on redirige sur index.php
                     $_SESSION['user'] = $data['email'];
+                    $_SESSION['role'] = $data['role'];
                     header('Location: ../index.php');
                     // die();
                     //Si il y a une erreur
