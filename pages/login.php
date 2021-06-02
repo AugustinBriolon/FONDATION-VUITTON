@@ -1,6 +1,5 @@
 <?php
 
-try {
     session_start(); // Démarrage de la session
     require_once 'config.php'; // On inclut la connexion à la base de données
     if (isset($_POST['email']) && isset($_POST['password'])) // Si il existe les champs email, password et qu'il sont pas vident
@@ -8,9 +7,6 @@ try {
         // Patch XSS
         $email = htmlspecialchars($_POST['email']);
         $password = htmlspecialchars($_POST['password']);
-
-        $email = strtolower($email); // email transformé en minuscule
-        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
         // On regarde si l'utilisateur est inscrit dans la table utilisateurs
         $check = $bdd->prepare('SELECT pseudo, email, password, role FROM utilisateurs WHERE email = ?');
@@ -28,7 +24,6 @@ try {
                     $_SESSION['user'] = $data['email'];
                     $_SESSION['role'] = $data['role'];
                     header('Location: ../index.php');
-                    // die();
                     //Si il y a une erreur
                 } else {
                     header('Location: seConnecter.php?login_err=password');
@@ -39,10 +34,8 @@ try {
                 die();
             }
         } else {
-            header('Location: seConnecter.php?login_err=already');
+            header('Location: seConnecter.php');
             die();
         }
     }
-} catch (\Throwable $th) {
-    //throw $th;
-}
+

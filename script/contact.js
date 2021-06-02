@@ -22,7 +22,6 @@ var nom = document.querySelector('.nom');
 var age = document.querySelector('.age');
 var email = document.querySelector('.email');
 var texte = document.querySelector('.texte');
-var bouton = document.querySelector('#bouton_validation');
 var message = '';
 
 // fonction pour valider le format de l'adresse mail
@@ -116,29 +115,9 @@ if (texte.value.length == 0) {
   }
 
 // événement sur le bouton de validation
-bouton.addEventListener('click', validation1);
-bouton.addEventListener('click', validation2);
-bouton.addEventListener('click', validation3);
-bouton.addEventListener('click', validation4);
-
-// animation boutton de validation
-$(function() {
-  $( "#bouton_validation" ).click(function() {
-    $( "#bouton_validation" ).addClass( ".onclic", 250, validate);
-  });
-
-  function validate() {
-    setTimeout(function() {
-      $( "#bouton_validation" ).removeClass( ".onclic" );
-      $( "#bouton_validation" ).addClass( ".validate", 450, callback );
-    }, 2250 );
-  }
-    function callback() {
-      setTimeout(function() {
-        $( "#bouton_validation" ).removeClass( ".validate" );
-      }, 1250 );
-    }
-  });
+nom.addEventListener('keyup', validation1);
+age.addEventListener('keyup', validation2);
+email.addEventListener('keyup', validation3);
 
 
 // animation bulle
@@ -159,4 +138,3 @@ window.addEventListener('load', () => {
 
   TL.play();
 })
-

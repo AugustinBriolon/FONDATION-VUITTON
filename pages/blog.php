@@ -8,26 +8,57 @@
 
 <header>    
   <img src="../img/Logo Grand FLV.png" class="LogoFLV" alt="Image Logo FLV">
-
-    <!-- icône menu -->
-    <img src="../img/burger.svg" class="icone-menu" alt="Icone Menu"/>
-
-<!-- menu -->
-<ul class="menu">
-<!-- icône fermer -->
-<img src="../img/croix.svg" class="icone-fermer" alt="Icone Croix"/>
-    <li><a href="../index.php" class="menu__item">Home</a></li>
-    <li><a href="../pages/histoire.php" class="menu__item">History</a></li>
-    <li><a href="../pages/galerie.php" class="menu__item">Gallery</a></li>
-    <li><a href="../pages/Blog.php" class="menu__item">Animation</a></li>
-    <li><a href="../pages/Contact.php" class="menu__item">Contact</a></li>
-    <li><a href="../pages/seConnecter.php" class="menu__item">Se Connecter</a></li>
-</ul>
 </header>
 
 <body>
-    <h1 id="h1">Animation</h1>  
-    <h5 id="h5">Tap with your cursor !</h5>      
+  <?php
+    include('./menu.php');
+  ?>
+  <h1 id="h1"><P>Blog Page</P></h1>  
+  <h5 id="h5">Read lot's of article about the Louis Vuitton Foundation</h5>
+
+    <?php
+      $db = new PDO('mysql:host=localhost;dbname=dialogue', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+      
+      if (isset($_POST['title'], $_POST['content']) && !empty($_POST['title']) && !empty($_POST['content']) && $_FILES["image"]["error"] === 0) {
+        
+        $title = htmlspecialchars(addslashes($_POST['title']));
+        $img = "../assets/upload/" . $_FILES["image"]["name"];
+        $content = htmlspecialchars(addslashes($_POST['content']));
+        
+        $tmp_name = $_FILES["image"]["tmp_name"];
+        move_uploaded_file($tmp_name, $img);
+        
+        $sql = "INSERT INTO article (title, image, content) VALUES ('$title', '$img', '$content')";
+        $db->exec($sql);
+      }
+                    
+      $r = $db->query('SELECT * FROM article');
+
+      while ($article = $r->fetch(PDO::FETCH_ASSOC)) {
+      ?>
+        <div class="article">
+          <img  src='<?php echo $article['image']; ?>'>
+          <h1> <?php echo $article['title']; ?> </h1>
+          <p> <?php echo $article['content']; ?> </p>
+        </div>
+      <?php } ?>
+    </article>
+
+    <div id='zone_crearticle'>
+      <form method='POST' action='' id='crearticle' enctype='multipart/form-data'>
+        <h1>Title :</h1>
+        <input type='text' name='title' class='champs' placeholder='Title' required>
+
+        <h1>Image :</h1>
+        <input type='file' name='image' value='' id='image' required>
+
+        <h1>Content :</h1>
+        <textarea name='content' placeholder='Article' class='champs' id='content' required></textarea>
+
+        <input type='submit' name='submit' value='publish' id='submit' class='btn-blue'>
+      </form>
+
   <!--Ajout de Jquery -->
   <script src="../script/blog.js"></script>
 

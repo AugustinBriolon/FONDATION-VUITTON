@@ -20,9 +20,9 @@
 
 .BFLV {
   font-size: 60px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
-	padding-top: 300px;
+  padding-top: 300px;
 }
 
 /* -----History----- */
@@ -340,8 +340,8 @@ textarea {
 /* on positionne et forme le bouton et on lui ajoute un effet */
 .specialBoutton {
   position: absolute;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   margin-left: -65px;
   margin-top: -20px;
   width: 130px;
@@ -363,42 +363,40 @@ button {
   cursor: pointer;
   transition: all 0.25s ease;
 }
-button:hover { 
-  color:white;
+button:hover {
+  color: white;
   background: #1ecd97;
 }
 button:active {
   letter-spacing: 2px;
-  letter-spacing: 2px ;
+  letter-spacing: 2px;
 }
 
-
-.onclic{
+.onclic {
   width: 40px;
   border-color: #bbbbbb;
   border-width: 3px;
   font-size: 0;
-  border-left-color:#1ecd97;
+  border-left-color: #1ecd97;
   animation: rotating 2s 0.25s linear infinite;
 }
 .onclic:after {
-  content:"";
+  content: "";
 }
 .onclic:hover {
-  color:#1ecd97;
+  color: #1ecd97;
   background: white;
 }
 
 .validate {
-  font-size:13px;
+  font-size: 13px;
   color: white;
   background: #1ecd97;
 }
 .validate:after {
-  content:"\f00c";
-  font-family:'FontAwesome';
-  }
-
+  content: "\f00c";
+  font-family: "FontAwesome";
+}
 
 @keyframes rotating {
   from {
