@@ -1,3 +1,4 @@
+
 // récupération des éléments HTML
 var menu = document.querySelector('.menu');
 var fermer = document.querySelector('.icone-fermer');
@@ -12,6 +13,3 @@ function afficherMenu() {
 // événements sur les icônes (click)
 burger.addEventListener('click', afficherMenu);
 fermer.addEventListener('click', afficherMenu);
-
-
-

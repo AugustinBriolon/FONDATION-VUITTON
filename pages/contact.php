@@ -4,6 +4,8 @@
 		<meta charset="utf-8">
 		<title>Fondation Louis Vuitton</title>
 		<link rel="stylesheet" href="../style/index.css">
+		<link rel="icon" type="image/x-icon" href="img/LogoFVL.png"/><link rel="shortcut icon" type="image/x-icon" href="img/LogoFVL.png" />
+
 	</head>
 	<header class="mainHeader">
 		<img src="../img/Logo Grand FLV.png" class="LogoFLVContact" alt="Image Logo FLV">
@@ -14,19 +16,9 @@
 		<p id="sousTitre">
 			Fill out the form to create an account.
 		</p>
-		<!-- icône menu -->
-		<img src="../img/burger.svg" class="icone-menu" alt="Icone Menu"/>
-		<!-- menu -->
-		<ul class="menu">
-			<!-- icône fermer -->
-			<img src="../img/croix.svg" class="icone-fermer" alt="Icone Croix"/>
-			<li><a href="../index.php" class="menu__item">Home</a></li>
-			<li><a href="../pages/histoire.php" class="menu__item">History</a></li>
-			<li><a href="../pages/galerie.php" class="menu__item">Gallery</a></li>
-			<li><a href="../pages/blog.php" class="menu__item">Animation</a></li>
-			<li><a href="../pages/contact.php" class="menu__item">Contact</a></li>
-			<li><a href="../pages/seConnecter.php" class="menu__item">Se Connecter</a></li>
-		</ul>
+		<?php
+			include ('./menu.php');
+        ?>
 		<!-- formulaire et message de validation -->
 		<div class="formulaire">
             <p class="zone-message1"></p>
@@ -64,13 +56,14 @@
 		</ul>
 		<!-- emepcher le zoom -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<footer>
-		<?php
-		include ('../pages/footer.php');
-		?>
-	</footer>
+		<footer>
+			<?php
+				include ('../pages/footer.php');
+			?>
+		</footer>
 		<!-- ajout de JS ici -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 		<script src="../script/contact.js"></script>
+		<script src="../script/menu.js"></script>
 	</body>
 </html>

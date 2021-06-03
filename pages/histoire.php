@@ -5,7 +5,6 @@
 		<title>Fondation Louis Vuitton</title>
 		<link rel="stylesheet" href="../style/index.css">
 		<link rel="icon" type="image/x-icon" href="../img/LogoFVL.png"/><link rel="shortcut icon" type="image/x-icon" href="../img/LogoFVL.png" />
-
 	</head>
 	<header>
 		<img src="../img/Logo Grand FLV.png" class="LogoHFLV" alt="Image Logo FLV">
@@ -39,10 +38,9 @@
 			autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 		<?php
-		include ('../pages/footer.php');
+			include ('../pages/footer.php');
 		?>
 		</footer>
-		<!-- ajout de JS ici -->
-		<script src="../script/histoire.js"></script>
+		<script src="../script/menu.js"></script>
 	</body>
 </html>

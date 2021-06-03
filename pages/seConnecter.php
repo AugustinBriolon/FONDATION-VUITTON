@@ -2,12 +2,13 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../style/index.css">
     <title>Se connecter</title>
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="icon" type="image/x-icon" href="img/LogoFVL.png"/><link rel="shortcut icon" type="image/x-icon" href="img/LogoFVL.png" />
 </head>
 <header>
     <?php
-        include('./menu.php');
+        include ('./menu.php');
     ?>
 </header>
 
@@ -18,46 +19,43 @@
 
         <div class="login-form">
 
-        <?php 
-        if(isset($_GET['login_err']))
-        {
-            $err = htmlspecialchars($_GET['login_err']);  
-                switch($err)
+            <?php 
+                if(isset($_GET['login_err']))
                 {
-                    case 'password':
-        ?>
-        <div>
-            <strong class="erreurConnexion">Erreur, mot de passe incorrect</strong> 
-        </div>
-        <?php
-            break;
-            case 'email':
-        ?>
+                $err = htmlspecialchars($_GET['login_err']);  
+                    switch($err)
+                    {
+                        case 'password':
+            ?>
             <div>
-                <strong class="erreurConnexion">Erreur, email incorrect</strong>
+                <strong class="erreurConnexion">Erreur, mot de passe incorrect</strong> 
             </div>
-        <?php
-            break;
-            }
-            }
-        ?>    
+            <?php
+                break;
+                case 'email':
+            ?>
+                <div>
+                    <strong class="erreurConnexion">Erreur, email incorrect</strong>
+                </div>
+            <?php
+                break;
+                }
+                }
+            ?>    
 
             <form action="login.php" method="post">
                 <h2 id="connexion">Connexion</h2>       
-        <div class="form-group">
-            <input type="email" name="email" class="emailConnexion" placeholder="Email" required autocomplete="on">
-        </div>
-        <div class="form-group">
-            <input type="password" name="password" class="passwordConnexion" placeholder="Mot de passe" required autocomplete="on">
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btnConnexion">Connexion</button>
-        </div>   
+                <div class="form-group">
+                    <input type="email" name="email" class="emailConnexion" placeholder="Email" required autocomplete="on">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" class="passwordConnexion" placeholder="Mot de passe" required autocomplete="on">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btnConnexion">Connexion</button>
+                </div>   
             </form>
         </div>
-
-        <script src="../header/header.js"></script>
-        <script src="../script/seConnecter.js"></script>
-
+        <script src="../script/menu.js"></script>
     </body>
 </html>

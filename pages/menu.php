@@ -1,7 +1,7 @@
 <?php
     session_start();
 ?>
-        <!-- icône menu -->
+		<!-- icône menu -->
 		<img src="/projet/img/burger.svg" class="icone-menu" alt="Icone Menu"/>
         <!-- menu -->
 		<ul class="menu">
@@ -15,3 +15,4 @@
 			<li><a href="/projet/pages/contact.php" class="menu__item">Contact</a></li>
 			<li><a href="/projet/pages/seConnecter.php" class="menu__item">Se Connecter</a></li>
 		</ul>
+		<script></script>

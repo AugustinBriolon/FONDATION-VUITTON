@@ -21,7 +21,7 @@
                 // Si le mot de passe est le bon
                 if (md5($password) === $data['password']) {
                     // On créer la session et on redirige sur index.php
-                    $_SESSION['user'] = $data['email'];
+                    $_SESSION['user'] = $data['pseudo'];
                     $_SESSION['role'] = $data['role'];
                     header('Location: ../index.php');
                     //Si il y a une erreur

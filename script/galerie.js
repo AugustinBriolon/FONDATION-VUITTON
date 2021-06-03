@@ -1,14 +1,42 @@
-// récupération des éléments HTML
-var menu = document.querySelector('.menu');
-var fermer = document.querySelector('.icone-fermer');
-var burger = document.querySelector('.icone-menu');
+var buttonTout = document.getElementById("buttonTout");
+var buttonExt = document.getElementById("buttonOut");
+var buttonIn = document.getElementById("buttonInt");
 
-// fonction pour ouvrir / fermer le menu
-function afficherMenu() {
-  menu.classList.toggle('visible');
+var imgExt = document.getElementsByClassName("extFLV");
+var imgInt = document.getElementsByClassName("intFLV");
+
+
+function ext() {
+    // console.log('ext');
+    for (let i = 0; i < imgExt.length; i++) {
+        imgExt[i].style.display = 'block' ;
+    }
+    for (let i = 0; i < imgInt.length; i++) {
+        imgInt[i].style.display = 'none' ;
+    }
 }
 
-// événements sur les icônes (click)
-burger.addEventListener('click', afficherMenu);
-fermer.addEventListener('click', afficherMenu);
+function int() {
+    // console.log('int');
+    for (let i = 0; i < imgInt.length; i++) {
+        imgInt[i].style.display = 'block';
+    }
+    for (let i = 0; i < imgExt.length; i++) {
+        imgExt[i].style.display = 'none';
+    }
+}
 
+function tout() {
+    // console.log('tout');
+    for (let i = 0; i < imgInt.length; i++) {
+        imgInt[i].style.display = 'block';
+    }
+    for (let i = 0; i < imgExt.length; i++) {
+        imgExt[i].style.display = 'block';
+    }
+}
+
+
+buttonTout.addEventListener('click', tout);
+buttonExt.addEventListener('click', ext);
+buttonIn.addEventListener('click', int);
