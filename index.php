@@ -18,5 +18,6 @@
 		<!--ajout de JS ici -->
 		<script src="script/typed.min.js"></script>
 		<script src="script/index.js"></script>
+		<script src="script/menu.js"></script>
 	</body>
 </html>

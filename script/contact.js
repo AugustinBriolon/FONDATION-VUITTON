@@ -11,7 +11,7 @@ var message = '';
 
 // fonction pour valider le format de l'adresse mail
 function formatEmail(adresse) {
-  return /\S+@\S+\.\S+/.test(adresse);
+    return /\S+@\S+\.\S+/.test(adresse);
 }
 
 // fonction pour valider les données
@@ -103,25 +103,3 @@ if (texte.value.length == 0) {
 nom.addEventListener('keyup', validation1);
 age.addEventListener('keyup', validation2);
 email.addEventListener('keyup', validation3);
-
-
-// animation bulle
-const medias = document.querySelectorAll('.bulle');
-
-window.addEventListener('load', () => {
-
-  const TL = gsap.timeline({
-    paused: true
-  });
-
-  TL
-
-    .staggerFrom(medias, 2, {
-      right: -200,
-      ease: "power2.out"
-    }, 0.3, '-=1');
-
-  TL.play();
-})
-
-

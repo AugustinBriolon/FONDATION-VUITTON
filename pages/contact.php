@@ -4,8 +4,8 @@
 		<meta charset="utf-8">
 		<title>Fondation Louis Vuitton</title>
 		<link rel="stylesheet" href="../style/index.css">
-		<link rel="icon" type="image/x-icon" href="img/LogoFVL.png"/><link rel="shortcut icon" type="image/x-icon" href="img/LogoFVL.png" />
-
+		<link rel="icon" type="image/x-icon" href="../img/LogoFVL.png"/>
+		<link rel="shortcut icon" type="image/x-icon" href="img/LogoFVL.png" />
 	</head>
 	<header class="mainHeader">
 		<img src="../img/Logo Grand FLV.png" class="LogoFLVContact" alt="Image Logo FLV">
@@ -34,7 +34,7 @@
             <label>Your text</label>
 			<textarea placeholder="Your text here" class="texte"></textarea>
 			<div class="specialBoutton">
-				<button id="bouton_validation">Send</button>
+				<button id="bouton_validation" class="buttonCommun">Send</button>
 			</div>
 		</div>
 		<ul class="medias">
@@ -54,15 +54,13 @@
 				<a href="https://www.google.com/maps/search/Fondation+Louis+Vuitton/@48.8924173,2.2429472,14z" target="_blank"><img src="../img/loca.png" class="logo-medias" href="https://www.google.com/maps/search/Fondation+Louis+Vuitton/@48.8924173,2.2429472,14z"></a>
 			</ol>
 		</ul>
-		<!-- emepcher le zoom -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- emepcher le zoom --> 
 		<footer>
-			<?php
+		<?php
 				include ('../pages/footer.php');
 			?>
 		</footer>
 		<!-- ajout de JS ici -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 		<script src="../script/contact.js"></script>
 		<script src="../script/menu.js"></script>
 	</body>

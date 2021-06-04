@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Fondation Louis Vuitton</title>
     <link rel="stylesheet" href="../style/index.css">
-    <link rel="icon" type="image/x-icon" href="img/LogoFVL.png"/><link rel="shortcut icon" type="image/x-icon" href="img/LogoFVL.png" />
+		<link rel="icon" type="image/x-icon" href="../img/LogoFVL.png"/><link rel="shortcut icon" type="image/x-icon" href="img/LogoFVL.png" />
 </head>
 
 <header>    
@@ -28,8 +28,8 @@
 
           </p>
       </div>
-      <button class="blogBtnPlus">Voir plus</button>
-      <button class="blogBtnMoins">Voir moins</button>
+      <button class="blogBtnPlus buttonCommun">Voir plus</button>
+      <button class="blogBtnMoins buttonCommun">Voir moins</button>
     </div>
 
 
@@ -41,8 +41,8 @@
             On the occasion of International Women's Rights Day, the Foundation is celebrating the journey of a woman who marked the history of architecture: Charlotte Perriand. This free woman, a pioneer of modernity, is one of the leading figures of the 20th century design world who helped define a new art of living. Charlotte Perriand's Le monde nouveau exhibition retraced the work of this architect, whose work anticipates contemporary debates around women and the place of nature in our society. Dedicating all of its galleries to Charlotte Perriand, the Louis Vuitton Foundation presented her works as well as the links she forged with the greatest artists of her time such as Calder, Leger and Picasso. Find the filmed route of the exhibition held at the Foundation from October 2, 2019 to February 24, 2020.
           </p>
       </div>
-      <button class="blogBtnPlus">Voir plus</button>
-      <button class="blogBtnMoins">Voir moins</button>
+      <button class="blogBtnPlus buttonCommun">Voir plus</button>
+      <button class="blogBtnMoins buttonCommun">Voir moins</button>
     </div>
 
 
@@ -54,8 +54,8 @@
             Few musicians can claim to have inscribed their name alongside Mozart and Rossini: such is the case of the Ukrainian Alexander Romanovsky, who, like these two geniuses, was awarded at the age of 15. the title of Honorary Academician by the Bologna Philharmonic Academy for his interpretation of Bach's Goldberg Variations. Like the ever-changing atmospheres of Brahms' Variations on a Theme by Paganini, the works he has assembled for his recital in the Auditorium of the Louis Vuitton Foundation are characterized by their freedom of inspiration. The obstinate bass of the chaconne of Bach's second Partita or the clever mix of technical difficulty and musical fluidity of Chopin's 24 Préludes Op.28 remind us that the greatest freedom sometimes comes from the most rigorous. constraint.
           </p>
       </div>
-      <button class="blogBtnPlus">Voir plus</button>
-      <button class="blogBtnMoins">Voir moins</button>
+      <button class="blogBtnPlus buttonCommun">Voir plus</button>
+      <button class="blogBtnMoins buttonCommun">Voir moins</button>
     </div>
 
 
@@ -67,21 +67,21 @@
             The Espace Louis Vuitton Beijing is proud to announce the presentation of an exhibition dedicated to major artist Alberto Giacometti. This presentation has been produced in the framework of the Fondation Louis Vuitton’s « Hors-les-murs » programm, showcasing holdings of the Collection at the Espaces Louis Vuitton in Tokyo, München, Venezia, Beijing, Seoul and Osaka, thus carrying out the Fondation’s intent to mount international projects and make them accessible to a broader public. Born in 1901 in Switzerland, Alberto Giacmetti moved to Paris (France) in 1922. He set his sights on the Montparnasse district, where he lived and worked until his death in 1966. Despite the almost instant recognition of his work, and the friendship he forged with several personalities such as André Breton, Georges Bataille, André Masson and Michel Leiris, Giacometti quickly turned away from surreal objects that made him famous to refocus on the model. This solitary breakaway, in which he had « no other purpose than to try to set up a human head », let him away from subservience to any movement, preferring to concentrate on the sources of creativity. Supported by his knowledge of prehistoric, ancient Egptian, Sumerian and archaix Greek art, his work combined daily experience of the model with timeless forms of ancient models.
           </p>
       </div>
-      <button class="blogBtnPlus">Voir plus</button>
-      <button class="blogBtnMoins">Voir moins</button>
+      <button class="blogBtnPlus buttonCommun">Voir plus</button>
+      <button class="blogBtnMoins buttonCommun">Voir moins</button>
     </div>
 
 
     <div class="contenerArticle">
       <img class="blogImages" src="../img/FranckGhery.png">
       <div>
-        <h1 class="blogText">#ALEXANDER ROMANOVSKY RECITAL</h1>
+        <h1 class="blogText">#FRANCK GEHRY</h1>
           <p class="blogPara"> 
            For the International Museum Day and until we can welcome you again from 22 September 2021 for The Morozov Collection. Icons of Modern Art exhibition, we invite you to dive into the heart of Frank Gehry's architecture with this *Parkour performance in the Fondation's building.The free-runners, Johan Tonnoir, Maxence de Schrooder and Benjamin Cante, explore the glass vessel, from the Grotto to the terraces via the monumental staircase. They take over spaces, get inspiration from the sails movements, and question the very notion of gravity.
           </p>
       </div>
-      <button class="blogBtnPlus">Voir plus</button>
-      <button class="blogBtnMoins">Voir moins</button>
+      <button class="blogBtnPlus buttonCommun">Voir plus</button>
+      <button class="blogBtnMoins buttonCommun">Voir moins</button>
     </div>
 
 
@@ -93,8 +93,8 @@
             The Espace Louis Vuitton Seoul is pleased to announce the opening of its new exhibition paying tribute to major German artist Gerhard Richter. This presentation has been produced in the framework of the Fondation Louis Vuitton’s “Hors-les-murs” programme, showcasing exceptional holdings of the Collection at the Espaces Louis Vuitton in Tokyo, Venice, Munich, Beijing, Seoul and Osaka, thus carrying out the Fondation’s intent to mount international projects and make them accessible to a broader public.Since the early 1960s, Gerhard Richter has created a paradoxical body of work that sits somewhere between figurative and abstract art. Classically trained as a painter, throughout his oeuvre Richter has maintained a lifelong fascination with the power of the image and painting’s long, uneasy relationship with photography. His early works depict enlarged black-and-white photographs, often from newspapers or his family albums, painted using only a range of greys. Richter blurs the depicted subjects, deviating from traditional figurative painting, in order to distinguish painting from photography. He believes that whilst either medium may claim to reflect or express reality truthfully, either ultimately suggests only a partial, or incomplete view of a subject; offering a far less objective meaning than originally assumed.
           </p>
       </div>
-      <button class="blogBtnPlus">Voir plus</button>
-      <button class="blogBtnMoins">Voir moins</button>
+      <button class="blogBtnPlus buttonCommun">Voir plus</button>
+      <button class="blogBtnMoins buttonCommun">Voir moins</button>
     </div>
 
 

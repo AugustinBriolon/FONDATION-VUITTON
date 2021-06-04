@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Se connecter</title>
     <link rel="stylesheet" href="../style/index.css">
-    <link rel="icon" type="image/x-icon" href="img/LogoFVL.png"/><link rel="shortcut icon" type="image/x-icon" href="img/LogoFVL.png" />
+    <link rel="icon" type="image/x-icon" href="../img/LogoFVL.png"/><link rel="shortcut icon" type="image/x-icon" href="img/LogoFVL.png" />
 </head>
 <header>
     <?php
@@ -43,7 +43,7 @@
                 }
             ?>    
 
-            <form action="login.php" method="post">
+            <form action="login.php" method="post class="form_login">
                 <h2 id="connexion">Connexion</h2>       
                 <div class="form-group">
                     <input type="email" name="email" class="emailConnexion" placeholder="Email" required autocomplete="on">
@@ -52,10 +52,10 @@
                     <input type="password" name="password" class="passwordConnexion" placeholder="Mot de passe" required autocomplete="on">
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btnConnexion">Connexion</button>
+                    <button type="submit" class="btnConnexion buttonCommun">Connexion</button>
                 </div>   
             </form>
         </div>
-        <script src="../script/menu.js"></script>
+        <script src="../script/menu.js"></script> 
     </body>
 </html>

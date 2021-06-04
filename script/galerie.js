@@ -1,3 +1,5 @@
+// tri photo
+
 var buttonTout = document.getElementById("buttonTout");
 var buttonExt = document.getElementById("buttonOut");
 var buttonIn = document.getElementById("buttonInt");
@@ -40,3 +42,5 @@ function tout() {
 buttonTout.addEventListener('click', tout);
 buttonExt.addEventListener('click', ext);
 buttonIn.addEventListener('click', int);
+
+

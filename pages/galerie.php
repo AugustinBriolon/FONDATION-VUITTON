@@ -10,30 +10,49 @@
       <meta charset="utf-8">
       <title>Fondation Louis Vuitton</title>
       <link rel="stylesheet" href="../style/index.css">
+      <link rel="icon" type="image/x-icon" href="../img/LogoFVL.png"/><link rel="shortcut icon" type="image/x-icon" href="img/LogoFVL.png" />
     </head>
   <body>
 
-    
+  <img src="../img/Logo Grand FLV.png" class="LogoFLVG" alt="Image Logo FLV">
     <?php
           include('./menu.php');
-          ?>
+    ?>
       <!-- ajout d'un titre -->
       <h1 id="texteGallery">Gallery</h1>
-
-      <button id="buttonTout">All</button>
-      <button id="buttonOut">Outdoor</button>
-      <button id="buttonInt">Indoor</button>
-      
+      <div class="boutonTri">
+        <button id="buttonTout" class="buttonCommun">All</button>
+        <button id="buttonOut" class="buttonCommun">Outdoor</button>
+        <button id="buttonInt" class="buttonCommun">Indoor</button>
+      </div>
         <div id="galerieImages">
             <img class="images extFLV" src="../img/Interieur2.png" />
+
+
             <img class="images extFLV" src="../img/BatFLV6.jpg" />
+
+
             <img class="images extFLV intFLV" src="../img/FranckGhery.png" />
+
+
             <img class="images intFLV" src="../img/Interieur.png" />
+
+
             <img class="images extFLV" src="../img/Nuit.png" />
+
+
             <img class="images extFLV" src="../img/Vu du haut.png" />
+
+
             <img class="images extFLV" src="../img/Voile.png" />
+
+
             <img class="images intFLV" src="../img/Restaurant.png" />
+
+
             <img class="images extFLV" src="../img/MaquetteGalerie.png" />
+
+            
         </div>
 
     <?php

@@ -36,17 +36,6 @@
   height: auto;
 }
 
-/* intégration d'u background et ajout de ses attributs */
-#bodyHistoire {
-  background: url(../img/MaquetteFLV.jpg) no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  opacity: 0, 7;
-  max-width: 100%;
-  height: auto;
-}
-
 /* modification du texte "Histoty" */
 #history {
   text-align: center;
@@ -71,7 +60,8 @@
 
 #texte3,
 #texte2,
-#texte1 {
+#texte1 
+{
   opacity: 0.9;
   padding: 10px;
   text-align: justify;
@@ -81,16 +71,12 @@
 }
 
 /* modification de titres des paragraphes */
-.titreH {
+.titreH,
+.texteH 
+{
   color: white;
   font-size: 20px;
   margin: 10px;
-}
-
-.texteH {
-  margin: 10px;
-  color: white;
-  font-size: 20px;
 }
 
 /* on place la vidéo YT */
@@ -109,50 +95,7 @@ footer iframe {
 }
 
 @media all and (max-width: 1024px) {
-  .icone-menu,
-  .icone-fermer {
-    cursor: pointer;
-    width: 80px;
-    /* on position l'icone en haut à gauche */
-    left: 30px;
-    position: absolute;
-    top: 30px;
-  }
-
-  .menu {
-    background-color: white;
-    color: black;
-    margin: 0;
-    padding-top: 80px;
-    z-index: 1;
-    /* on positionne le menu à gauche sur toute la hauteur */
-    bottom: 0;
-    position: absolute;
-    top: 0;
-    /* on cache le menu */
-    opacity: 0;
-    transform: translateX(-100%);
-    /* transition */
-    transition: all 0.8s;
-  }
-
-  .visible {
-    /* on affiche le menu */
-    opacity: 1;
-    transform: translateX(0%);
-  }
-
-  a {
-    font-size: 60px;
-    color: black;
-    text-align: left;
-    display: inline;
-  }
-
-  li {
-    list-style-type: none;
-    padding: 10px 20px 25px 20px;
-  }
+  
 
   #texte3,
   #texte2,
@@ -171,16 +114,19 @@ footer iframe {
 
 /* ----- GALERIE ----- */
 
-#buttonTout,
-#buttonOut,
-#buttonInt
-{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  margin-left: 47%;
+.LogoFLVG {
+  margin-top: 30px;
+  margin-left: 35%;
+  max-width: 38%;
+  height: auto;
 }
 
+.boutonTri {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row;
+}
 
 #texteGallery {
   margin-top: 50px;
@@ -239,6 +185,43 @@ div.message {
     #zonecommentaire   
   {
     grid-template-columns: 1fr;
+  }
+
+  #zonecommentaire {
+    margin-left: 15%;
+  }
+
+  .boutonTri {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #bouttonTout,
+  #bouttonOut,
+  #bouttonInt
+  {
+    width: 60px !important;
+    height: auto !important;
+  }
+
+  #texteGallery {
+    font-size: 50px;
+  }
+  
+  .LogoFLVG {
+    max-width: 70%;
+    height: auto;
+    margin-left: 19%;
+  }
+
+  #zonepseudo,
+  #zonetext,
+  #zonebouton
+  {
+    width: 700px;
+    height: 150px;
   }
 }
 
@@ -328,18 +311,6 @@ div.message {
   height: auto;
 }
 
-/* on stylise le boutpn */
-.specialBoutton {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -65px;
-  margin-top: -20px;
-  width: 130px;
-  height: 40px;
-  text-align: center;
-}
-
 /* intégration d'u background et ajout de ses attributs */
 #bodyContact {
   background: url(../img/Image_de_fond.jpg) no-repeat;
@@ -422,8 +393,8 @@ textarea {
 
 /* position des logos */
 .logo-medias {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: auto;
 }
 
 @keyframes rotating {
@@ -436,69 +407,24 @@ textarea {
 }
 
 /* création du responsive de la page */
-@media all and (max-width: 1024px) {
-  .icone-menu,
-  .icone-fermer {
-    cursor: pointer;
-    width: 30px;
-    /* on position l'icone en haut à gauche */
-    left: 30px;
-    position: absolute;
-    top: 30px;
-  }
-
-  .menu {
-    background-color: white;
-    color: black;
-    margin: 0;
-    padding-top: 80px;
-    z-index: 1;
-    /* on positionne le menu à gauche sur toute la hauteur */
-    bottom: 0;
-    position: absolute;
-    top: 0;
-    /* on cache le menu */
-    opacity: 0;
-    transform: translateX(-100%);
-    /* transition */
-    transition: all 0.8s;
-  }
-
-  .visible {
-    /* on affiche le menu */
-    opacity: 1;
-    transform: translateX(0%);
-  }
-
-  a {
-    font-size: 40px;
-    color: black;
-    text-align: left;
-    display: inline;
-  }
-
-  li {
-    list-style-type: none;
-    padding: 10px 20px 25px 20px;
-  }
+@media (max-width: 1024px) {
 
   /* on positionne les bulles */
   .medias {
-    list-style-type: none;
-    position: absolute;
-    right: 8%;
-    top: 90%;
-    transform: translateY(-50%);
+    top: 2000px;
+    position: fixed;
+    right: 0%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    width: 100%;
   }
 
   /* on donne la forme souhaitée aux bulles */
   .bulle {
-    width: 60px;
-    height: 60px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     border: 1px solid #f1f1f1;
     display: flex;
@@ -510,17 +436,9 @@ textarea {
     position: relative;
   }
 
-  /* position des logos */
   .logo-medias {
-    width: 30px;
-    height: 30px;
-  }
-
-  /* on positionne le logo */
-  .LogoFLV {
-    padding: 10px 100px 20px 50px;
-    max-width: 550px;
-    max-height: 200px;
+    width: 90px;
+    height: auto;
   }
 
   /* placement "contact" */
@@ -548,6 +466,18 @@ textarea {
   /* placement du formulaire */
   .formulaire {
     margin-left: 32%;
+    width: 100px;
+    height: auto;
+  }
+}
+
+@media (max-width: 980px){
+  .formulaire {
+    width: 900px;
+    height: auto;
+  }
+  #sousTitre {
+    margin-left: 30%;
   }
 }
 
@@ -588,6 +518,7 @@ video {
 .btnConnexion {
   font-size: 15px;
   font-weight: bold;
+  margin-left: 50px !important;
 }
 
 .emailConnexion,
@@ -628,6 +559,8 @@ strong.erreurConnexion {
   .btnConnexion {
     font-size: 35px;
     font-weight: bold;
+    min-width: 500px;
+    margin-left: 94px !important;
   }
   .emailConnexion,
   .passwordConnexion,
@@ -677,6 +610,9 @@ a {
   display: inline;
 }
 
+.bouttonModeD {
+  padding: 5px 80px 5px 40px;
+}
 /* appliquation de paramètres typographique et d'emplacement */
 * {
   font-family: "Montserrat", sans-serif;
@@ -771,7 +707,7 @@ li {
     opacity: 0.8;
     transform: translateX(0%);
   }
-  a {
+  .menu__item {
     font-size: 60px;
     color: black;
     text-align: left;
@@ -785,7 +721,7 @@ li {
 
 
 /*-- ON STYLISE LES BOUTONS DU SITE --*/
-button {
+.buttonCommun {
   outline: none;
   height: 40px;
   text-align: center;
@@ -800,11 +736,11 @@ button {
   cursor: pointer;
   transition: all 0.25s ease;
 }
-button:hover {
+.buttonCommun:hover {
   color: white;
   background: #1ecd97;
 }
-button:active {
+.buttonCommun:active {
   letter-spacing: 2px;
   letter-spacing: 2px;
 }
@@ -823,4 +759,22 @@ button:active {
 .onclic:hover {
   color: #1ecd97;
   background: white;
+}
+
+@media (max-width: 1000px) {
+  .buttonCommun{
+    font-size: 50px;
+    min-height: 150px;
+    min-width: 500px;
+  }
+}
+/* boutton dark et light mode */
+.light{
+  background: white !important;
+  color: black !important;
+}
+
+.dark {
+  background: black !important;
+  color: white !important;
 }
