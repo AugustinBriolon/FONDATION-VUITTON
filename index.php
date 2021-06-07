@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Fondation Louis Vuitton</title>
-		<link rel="stylesheet" href="./style/index.css">
+		<link rel="stylesheet" href="./style/style.css">
 		<link rel="icon" type="image/x-icon" href="img/LogoFVL.png"/><link rel="shortcut icon" type="image/x-icon" href="img/LogoFVL.png" />
 	</head>
 	<header>

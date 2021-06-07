@@ -9,7 +9,7 @@
     <head>
       <meta charset="utf-8">
       <title>Fondation Louis Vuitton</title>
-      <link rel="stylesheet" href="../style/index.css">
+      <link rel="stylesheet" href="../style/style.css">
       <link rel="icon" type="image/x-icon" href="../img/LogoFVL.png"/><link rel="shortcut icon" type="image/x-icon" href="img/LogoFVL.png" />
     </head>
   <body>
@@ -80,9 +80,9 @@
             <div class='date'>" . $commentaires['date'] . "</div>
             ";
           
-        if ($_SESSION['role'] === 'ADMIN') {
+        // if ($_SESSION['role'] === 'ADMIN') {
           echo "<a class='delete' href='galerie.php?id=" . $commentaires['id'] . "'> Delete </a>";
-          }
+          // }
 
           echo "</div>";
         }

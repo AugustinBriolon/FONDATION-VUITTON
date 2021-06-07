@@ -3,16 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Fondation Louis Vuitton</title>
-		<link rel="stylesheet" href="../style/index.css">
+		<link rel="stylesheet" href="../style/style.css">
 		<link rel="icon" type="image/x-icon" href="../img/LogoFVL.png"/><link rel="shortcut icon" type="image/x-icon" href="../img/LogoFVL.png" />
 	</head>
 	<header>
 		<img src="../img/Logo Grand FLV.png" class="LogoHFLV" alt="Image Logo FLV">
 	</header>
 	<body id="bodyHistoire">
+
 		<?php
-			include ('../pages/menu.php');
-		?>
+			include ('./menu.php');
+        ?>
 		<!-- paragraphes -->
 			<h1 id="history">History</h1>
 
@@ -40,14 +41,15 @@
 			</div>,0
 		
 		<footer>
-				<iframe id='parallax4' width="1000" height="563" src="https://www.youtube.com/embed/G69EXN-Lm9g" frameborder="0" allow="accelerometer; 
-				autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				<iframe id='parallax4' width="1000" height="563" src="https://www.youtube.com/embed/G69EXN-Lm9g" frameborder="0" 	      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 				</iframe>
+
 				<?php
-					include ('../pages/footer.php');
+					include ('./footer.php');
 				?>
+
 		</footer>
-		<script scr="../script/menu.js"></script>
+		<script src="../script/menu.js"></script>
 		<!-- <script scr="../script/histoire.js"></script> -->
 	</body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Se connecter</title>
-    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="icon" type="image/x-icon" href="../img/LogoFVL.png"/><link rel="shortcut icon" type="image/x-icon" href="img/LogoFVL.png" />
 </head>
 <header>
