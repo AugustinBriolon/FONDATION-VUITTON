@@ -1,5 +1,17 @@
 // Ajout de l'animation 
-var typed = new Typed('#BFLV', {
-  strings: ["Welcome to Louis Vuitton Foundation"],
-  typeSpeed: 30
-});
+var i = 0;
+var txt = 'Welcome to the Louis Vuitton Foundation';
+var speed = 30;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.querySelector("#BFLV").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+if (window.addEventListener) {
+  window.addEventListener('load', typeWriter);
+}
+

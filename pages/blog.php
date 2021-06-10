@@ -12,8 +12,8 @@
 </header>
 
 <body>
-  <h1 id="blogTitre"><P>Blog Page</P></h1>  
-  <h5 id="blogST">Read lot's of article about the Louis Vuitton Foundation</h5>
+  <h1 id="blogTitre"><p>Blog Page</p></h1>  
+  <h5 id="blogST">Read lot's of article about </br> the Louis Vuitton Foundation</h5>
   <?php
     include('./menu.php');
   ?>
@@ -137,17 +137,17 @@
   </div>
 
   <div id="placement_newarticles">
-    <form method='POST' action='' id='' enctype='multipart/form-data'>
-    <h1>Titre : </h1>
+    <form method='POST' action='' id='formBlog' enctype='multipart/form-data'>
+    <h1 class='creaArt'>Titre : </h1>
     <input type='text' name='titre' class='placement' placeholder='Titre' required>
 
-    <h1>Images : </h1>
+    <h1 class='creaArt'>Images : </h1>
     <input type='file' name='image' value='' id='new_image' required>
 
-    <h1>Contenu : </h1>
+    <h1 class='creaArt'>Contenu : </h1>
     <textarea name='contenu' placeholder='Article' class='champs' id='contenu' required></textarea>
 
-    <input type='submit' name ='submit' value='publish' id='submit' class='btn-green'>
+    <input type='submit' name ='submit' value='publish' id='submit' class='buttonCommun'>
     </form>
   </div>
 

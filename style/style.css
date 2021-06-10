@@ -26,6 +26,15 @@
   opacity: 0.7;
 }
 
+@media all and (max-width: 1024px) {
+
+  #LogoMiniFLV {
+    max-width: 20%;
+    margin-top: 18px;
+  }
+}
+
+
 /* ----- HISTORY ----- */
 
 /* on positionne le logo */
@@ -88,14 +97,9 @@ footer iframe {
 }
 
 /* création du responsive de la page */
-@media all and (max-width: 480px) {
-  body {
-    float: none;
-  }
-}
+
 
 @media all and (max-width: 1024px) {
-  
 
   #texte3,
   #texte2,
@@ -104,11 +108,26 @@ footer iframe {
   }
 
   #texte2 {
-    margin-left: 25%;
+    margin-left: 10%;
   }
 
   footer iframe {
     margin-left: 10%;
+  }
+
+  #history {
+    margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+    margin-left: 20%;
+    font-size: 50px;
+  }
+
+  .LogoHFLV {
+    max-width: 85%;
+    height: auto;
+    margin-left: 19%;
+    margin-top: 55px;
   }
 }
 
@@ -154,16 +173,18 @@ footer iframe {
 }
 
 #zonepseudo,
-#zonetext,
-#zonebouton
+#zonetext
 {
-  border-radius: 10%;
+  border-radius: 40px;
 }
 
 
 div.message {
-  display: inline;
-
+  background-color: #60e2b9;;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 @font-face {
@@ -214,6 +235,7 @@ div.message {
     max-width: 70%;
     height: auto;
     margin-left: 19%;
+    margin-top: 55px;
   }
 
   #zonepseudo,
@@ -222,6 +244,20 @@ div.message {
   {
     width: 700px;
     height: 150px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  #zonebouton {
+    margin: 0px 0 0px 0px;
+  }
+
+  .pseudo,
+  .commentaire,
+  .date,
+  a.delete
+  {
+    font-size: 35px;
   }
 }
 
@@ -284,28 +320,64 @@ div.message {
 }
 
 @media (max-width : 980px ) {
+  .contenerArticle {
+    margin-top: 100px;
+  }
+
   #blogArticles {
     grid-template-columns: 1fr;
   }
+
   #blogTitre {
-    font-size: 40px;
-  }
-  #blogST {
-    text-align: center;
-    font-size: 22px;
-  }
-  #LogoFLV {
-    max-width: 65%;
-    margin-left: 20%;
+    font-size: 50px;
   }
 
+  #blogST {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #blogTitre,
+  #blogST
+  {
+    margin-top: 25px;
+  }
+
+  #LogoFLV {
+    max-width: 75%;
+    margin-left: 18%;
+    margin-top: 55px;
+  }
+
+  #formBlog {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input.placement,
+  input#new_image,
+  textarea#contenu
+  {
+    width: 700px;
+    height: 150px;
+    border-radius: 40px;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0px !important;
+  }
+
+  .creaArt {
+    font-size: 60px;
+    font-style: oblique;
+  }
 }
 
 /* ---- CONTACT ---- */
 
 /* on positionne le logo */
 .LogoFLVContact {
-  margin-top: 0px;
   margin-left: 35%;
   max-width: 38%;
   height: auto;
@@ -409,9 +481,25 @@ textarea {
 /* création du responsive de la page */
 @media (max-width: 1024px) {
 
+  .LogoFLVContact {
+    max-width: 80%;
+    margin-left: 14%;
+  }
+
+  #titreContact {
+    font-size: 50px;
+    margin-left: 40%;
+  }
+
+  #sousTitre {
+    font-size: 30px;
+    margin-left: 20%;
+    margin-top: 20px;
+  }
+
   /* on positionne les bulles */
   .medias {
-    top: 2000px;
+    top: 95%;
     position: fixed;
     right: 0%;
     display: flex;
@@ -465,20 +553,39 @@ textarea {
 
   /* placement du formulaire */
   .formulaire {
-    margin-left: 32%;
-    width: 100px;
-    height: auto;
+    margin-left: 26%;
+    width: 300px;
+    height: 1845px;
   }
-}
 
-@media (max-width: 980px){
-  .formulaire {
-    width: 900px;
-    height: auto;
+  label, 
+  input, 
+  textarea 
+  {
+  font-size: 50px;
+  margin-top: 5px;
+  min-height: 150px;
+  min-width: 500px;
+  border-radius: 40px;
+  text-align: center;
   }
-  #sousTitre {
-    margin-left: 30%;
+
+  #bouton_validation {
+    margin: 100px 0px 0px 0px;  
   }
+
+  .zone-message1,
+  .zone-message2,
+  .zone-message3,
+  .zone-message4 
+  {
+    font-size: 30px;
+    margin-top: 2%;
+    text-align: center;
+    margin-left: 150px;
+  }
+
+
 }
 
 /* --- SE CONNECTER --- */
@@ -702,11 +809,13 @@ li {
     transform: translateX(-100%);
     /* transition */
     transition: all 0.8s;
+    height: 1000px;
   }
   .visible {
     /* on affiche le menu */
-    opacity: 0.8;
+    opacity: 1;
     transform: translateX(0%);
+    height: 1000px;
   }
   .menu__item {
     font-size: 60px;
@@ -736,6 +845,7 @@ li {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.25s ease;
+  margin: 20px 0 2px 40px;
 }
 .buttonCommun:hover {
   color: white;
@@ -765,7 +875,15 @@ li {
     min-height: 150px;
     min-width: 500px;
   }
+
+  button.buttonModeD.buttonCommun {
+    min-height: 150px;
+    min-width: 300px;
+    margin-top: 100px;
+    margin: 0px 0 2px 40px;
+  }
 }
+
 /* boutton dark et light mode */
 .light{
   background: white !important;

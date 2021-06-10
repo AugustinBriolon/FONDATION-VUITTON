@@ -25,35 +25,17 @@
         <button id="buttonOut" class="buttonCommun">Outdoor</button>
         <button id="buttonInt" class="buttonCommun">Indoor</button>
       </div>
-        <div id="galerieImages">
-            <img class="images extFLV" src="../img/Interieur2.png" />
-
-
-            <img class="images extFLV" src="../img/BatFLV6.jpg" />
-
-
-            <img class="images extFLV intFLV" src="../img/FranckGhery.png" />
-
-
-            <img class="images intFLV" src="../img/Interieur.png" />
-
-
-            <img class="images extFLV" src="../img/Nuit.png" />
-
-
-            <img class="images extFLV" src="../img/Vu du haut.png" />
-
-
-            <img class="images extFLV" src="../img/Voile.png" />
-
-
-            <img class="images intFLV" src="../img/Restaurant.png" />
-
-
-            <img class="images extFLV" src="../img/MaquetteGalerie.png" />
-
-            
-        </div>
+      <div id="galerieImages">
+          <img class="images extFLV" src="../img/Interieur2.png" />
+          <img class="images extFLV" src="../img/BatFLV6.jpg" />
+          <img class="images extFLV intFLV" src="../img/FranckGhery.png" />
+          <img class="images intFLV" src="../img/Interieur.png" />
+          <img class="images extFLV" src="../img/Nuit.png" />
+          <img class="images extFLV" src="../img/Vu du haut.png" />
+          <img class="images extFLV" src="../img/Voile.png" />
+          <img class="images intFLV" src="../img/Restaurant.png" />
+          <img class="images extFLV" src="../img/MaquetteGalerie.png" />
+      </div>
 
     <?php
 
@@ -93,7 +75,7 @@
     <form method="post" id="zonecommentaire">
       <input type="text" name="pseudo" placeholder="Pseudo" id="zonepseudo" required>
       <textarea name="message" placeholder="Message" id="zonetext" required></textarea>
-      <input type="submit" id="zonebouton">
+      <input type="submit" id="zonebouton" class="buttonCommun">
     </form>
     <footer>
         <?php
