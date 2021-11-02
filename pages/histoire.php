@@ -41,7 +41,7 @@
 			</div>,0
 		
 		<footer>
-				<iframe id='parallax4' width="1000" height="563" src="https://www.youtube.com/embed/G69EXN-Lm9g" frameborder="0" 	      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				<iframe id='parallax4' width="1000" height="563" src="https://www.youtube.com/embed/G69EXN-Lm9g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 				</iframe>
 
 				<?php

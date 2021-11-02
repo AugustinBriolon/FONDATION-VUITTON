@@ -10,7 +10,7 @@
 		<img src="img/LogoFVL.png" id="LogoMiniFLV" alt="Image Logo FLV">
 	</header>
 	<body id="bodyIndex">
-        <h1 id="BFLV"></h1>
+        <h1 id="BFLV">Welcome to Fondation Louis Vuitton</h1>
 		<?php
 			include ('pages/menu.php');	
 			include ('pages/footer.php');

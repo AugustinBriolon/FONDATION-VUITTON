@@ -20,7 +20,7 @@
   <div id="blogArticles">
 
     <div class="contenerArticle">
-      <img class="blogImages" src="../img/BatFLV4.jpg">
+      <img class="blogImages" src="../img/BATFLV4.jpg">
       <div>
         <h1 class="blogText">#FLVCHEZVOUS...</h1>
           <p class="blogPara"> 
