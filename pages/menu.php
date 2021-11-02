@@ -3,7 +3,7 @@
 ?>
 <body class='light'>
 		<!-- icône menu -->
-		<img src="/projet/img/burger.svg" class="icone-menu" alt="Icone Menu"/>
+		<img src="./img/burger.svg" class="icone-menu" alt="Icone Menu"/>
         <!-- menu -->
 		<ul class="menu">
 			<!-- icône fermer -->
