@@ -1,6 +1,6 @@
 // Ajout de l'animation 
 var i = 0;
-var txt = 'Tatoo';
+var txt = 'Welcome to Louis Vuitton Foundation';
 var speed = 30;
 
 function typeWriter() {

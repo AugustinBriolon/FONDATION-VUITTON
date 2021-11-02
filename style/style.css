@@ -10,12 +10,6 @@
 }
 
 #bodyIndex {
-  background-image: url(../img/BATFLV5.jpeg);
-  background-repeat: no-repeat;
-}
-
-
-#bodyIndex {
   background: url(../img/BATFLV5.jpeg) no-repeat;
   background-position: center;
   background-size: cover;
